@@ -1,0 +1,182 @@
+:root {
+  --accent-color: #f2353f;
+  --lite-color: #ffffff;
+  --bg-color: #f2f4f7;
+  --label-color: #b0b6bf
+  
+}
+
+body {
+  font-family: "TT Norms", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  /* text-transform: ; */
+  color: #1f2c37;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover,
+.link:focus,
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+}
+
+.button {
+  border: none;
+  line-height: 1;
+  color: inherit;
+  background-color: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+.header {
+  line-height: 1;
+}
+
+.nav .link {
+  font-size: 15px;
+
+}
+
+.header .list-item:last-child {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.hero {
+  font-size: 14px;
+  line-height: 1;
+  background-color: gray;
+  color: var(--lite-color);
+}
+
+.page-title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.title-label {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--label-color);
+}
+
+.section-title {
+  font-size: 37px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.services .link {
+  font-size: 19px;
+  line-height: 1.3;
+}
+
+.services .link:hover,
+.serveces .link:focus {
+  background-color: var(--accent-color);
+  color: var(--lite-color);
+}
+
+.benefits {
+  background-color: var(--bg-color);
+}
+
+.benefits-item {
+  line-height: 1.4;
+}
+
+.benefits-number {
+  font-size: 75px;
+  line-height: 1;
+}
+
+.works {
+  line-height: 1;
+}
+.works h3,
+.news h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.works p {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+
+.works .button,
+.news .button,
+.footer .button {
+  font-weight: 500;
+  /* line-height: 1; */
+}
+
+.label {
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: var(--label-color);
+}
+
+.date {
+  font-size: 12px;
+  line-height: 1;
+  color: var(--label-color);
+}
+.news h3 {
+  line-height: 1.3;
+}
+
+.details {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+.top-footer {
+  background-color: var(--bg-color);
+}
+
+.fotter-title {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.footer .button {
+  font-size: 12px;
+  border: 1px solid var(--accent-color);
+}
+
+.main-nav,
+.placeholder {
+  line-height: 1;
+}
+
+.low-footer {
+  font-size: 14px;
+  line-height: 1;
+}
