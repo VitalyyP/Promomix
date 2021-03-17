@@ -14,6 +14,16 @@ body {
   color: #1f2c37;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px,1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -179,4 +189,13 @@ body {
 .low-footer {
   font-size: 14px;
   line-height: 1;
+}
+
+.features-list {
+  width: 400px;
+  background-color: tomato;
+}
+
+.features-list li {
+  display: inline-block;
 }
