@@ -10,7 +10,6 @@ body {
   font-family: "TT Norms", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  /* text-transform: ; */
   color: #1f2c37;
 }
 
@@ -143,7 +142,6 @@ body {
 .news .button,
 .footer .button {
   font-weight: 500;
-  /* line-height: 1; */
 }
 
 .label {
@@ -191,11 +189,27 @@ body {
   line-height: 1;
 }
 
-.features-list {
-  width: 400px;
-  background-color: tomato;
+.kind {
+  width: 210px;
+  height: 210px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--label-color);
 }
 
-.features-list li {
-  display: inline-block;
+.kind-a4 {
+  height: 297px;
 }
+
+.kind-a5 {
+  width: 148px;
+}
+
+.kind-a6 {
+  width: 105px;
+  height: 148px;
+}
+
+.kind-98x210 {
+  width: 98px;
+}
+
