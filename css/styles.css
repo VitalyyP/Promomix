@@ -88,6 +88,7 @@ ul {
 
 .section {
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 
@@ -254,7 +255,9 @@ ul {
 
 .direction-item .link:hover .icon,
 .direction-item .link:focus .icon {
-  stroke: var(--lite-color);
+  stroke: currentColor;
+  /* stroke: var(--lite-color); */
+  /* fill: var(--lite-color); */
 }
 
 
@@ -274,8 +277,40 @@ ul {
   background-color: var(--bg-color);
 }
 
+.benefits.section {
+  padding-top: 151px;
+  padding-bottom: 150px;
+}
+
+.benefits-container {
+  display: flex;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
+.benefits .container-section-title,
+.benefits .container-list {
+  flex-basis: calc((100% - 60px * 2) / 2);
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.benefits .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
 .benefits-item {
+  flex-basis: calc((100% - 60px * 2) / 2);
+  margin-left: 60px;
+  margin-top: 60px;
   line-height: 1.4;
+}
+
+.benefits .container-p {
+  width: 155px;
 }
 
 .benefits-number {
@@ -301,6 +336,19 @@ ul {
 .news .button,
 .footer .button {
   font-weight: 500;
+}
+
+.works .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
+.works .item {
+  flex-basis: cals ((100% - 60px * 2) / 2);
+  margin-left: 60px;
+  margin-top: 60px;
 }
 
 .label {
