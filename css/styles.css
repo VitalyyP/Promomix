@@ -290,10 +290,8 @@ ul {
   margin-top: -60px;
 }
 
-.benefits .container-section-title,
-.partners .container-section-title,
-.benefits .container-list,
-.partners .container-list {
+.container-section-title,
+.container-list {
   flex-basis: calc((100% - 60px * 2) / 2);
   margin-left: 60px;
   margin-top: 60px;
@@ -427,20 +425,20 @@ ul {
   line-height: 1.3;
 }
 
-/* .news .label {
-  flex-basis: calc(10%);
-  margin-right: 30px;
-} */
-
-.news .item {
-  display: flex;
+.news .list {
+  /* display: flex; */
   margin-top: -60px;
-  margin-right: -60px;
+  margin-left: -60px;
+} 
+
+.news .box-item {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 60px;
 }
 
 .news .label-image-content {
   flex-basis: calc((100% - 60px) / 2);
-  margin-top: 60px;
   margin-right: 60px;
   display: flex;
   justify-content: space-between;
@@ -448,8 +446,8 @@ ul {
 
 .news .text-content {
   flex-basis: calc((100% - 60px) / 2);
-  margin-top: 60px;
-  margin-right: 60px;
+  /* margin-top: 60px;
+  margin-left: 60px; */
 }
 
 
@@ -460,6 +458,9 @@ ul {
 }
 
 .top-footer {
+  display: flex;
+  margin-right: -60px;
+  margin-top: -60px;
   background-color: var(--bg-color);
 }
 
