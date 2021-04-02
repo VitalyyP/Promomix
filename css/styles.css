@@ -274,7 +274,8 @@ ul {
 }
 
 .benefits,
-.partners {
+.partners,
+.footer-dark {
   background-color: var(--bg-color);
 }
 
@@ -284,7 +285,8 @@ ul {
 }
 
 .benefits-container,
-.partners-container {
+.partners-container,
+.footer-container {
   display: flex;
   margin-left: -60px;
   margin-top: -60px;
@@ -459,12 +461,11 @@ ul {
 
 .top-footer {
   display: flex;
-  margin-right: -60px;
+  margin-left: -60px;
   margin-top: -60px;
-  background-color: var(--bg-color);
 }
 
-.fotter-title {
+.footer-title {
   font-size: 30px;
   line-height: 1.2;
 }
@@ -472,6 +473,10 @@ ul {
 .footer .button {
   font-size: 12px;
   border: 1px solid var(--accent-color);
+}
+
+.footer .item {
+  margin-bottom: 18px;
 }
 
 .main-nav,
@@ -482,6 +487,7 @@ ul {
 .low-footer {
   font-size: 14px;
   line-height: 1;
+  /* background-color: var(--lite-color); */
 }
 
 .kind {
