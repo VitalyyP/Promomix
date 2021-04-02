@@ -2,15 +2,15 @@
   --accent-color: #f2353f;
   --lite-color: #ffffff;
   --bg-color: #f2f4f7;
-  --label-color: #b0b6bf
-  
+  --label-color: #b0b6bf;
+  --text-color: #1f2c37;
 }
 
 body {
   font-family: "TT Norms", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #1f2c37;
+  color: var(--text-color);
   width: 1600px;
 }
 
@@ -297,6 +297,7 @@ ul {
   flex-basis: calc((100% - 60px * 2) / 2);
   margin-left: 60px;
   margin-top: 60px;
+  outline: 1px solid blue;
 }
 
 .benefits .list,
@@ -377,7 +378,8 @@ ul {
   margin-bottom: 0;
 }
 
-.works .button {
+.works .button,
+.news .button {
   display: block;
   margin-left: auto;
 }
@@ -414,9 +416,14 @@ ul {
 }
 
 .date {
+  margin-bottom: 20px;
   font-size: 12px;
   line-height: 1;
   color: var(--label-color);
+}
+
+.news {
+  padding-bottom: 205px;
 }
 
 .news .section-title {
@@ -424,6 +431,7 @@ ul {
 }
 
 .news h3 {
+  margin-bottom: 10px;
   line-height: 1.3;
 }
 
@@ -433,6 +441,9 @@ ul {
   margin-left: -60px;
 } 
 
+.news .item:last-child {
+  margin-bottom: 83px;
+}
 .news .box-item {
   display: flex;
   margin-top: 60px;
@@ -452,12 +463,26 @@ ul {
   margin-left: 60px; */
 }
 
+.news .discription {
+  margin-bottom: 40px;
+}
 
+.news .link {
+  display: block;
+  height: 100%;
+}
+
+.news .link:hover .discription,
+.news .link:focus .discription {
+  color: var(--text-color);
+}
 
 .details {
+  margin-left: 27px;
   font-size: 12px;
   letter-spacing: 0.05em;
 }
+
 
 .top-footer {
   display: flex;
