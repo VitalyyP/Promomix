@@ -89,6 +89,7 @@ ul {
 .section {
   padding-top: 200px;
   padding-bottom: 200px;
+  outline: 1px solid blue;
 }
 
 
@@ -208,18 +209,10 @@ ul {
   line-height: 1.2;
 }
 
-.direction-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -60px;
-  margin-top: -60px;
-}
 
-.direction-item {
-  /* display: block; */
 
+.grid-item {
   flex-basis: calc((100% - 60px * 4) / 4);
-  /* height: 255px; */
   margin-left: 60px;
   margin-top: 60px;
 }
@@ -292,12 +285,19 @@ ul {
   margin-top: -60px;
 }
 
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+
 .container-section-title,
 .container-list {
   flex-basis: calc((100% - 60px * 2) / 2);
   margin-left: 60px;
   margin-top: 60px;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 .benefits .list,
@@ -533,6 +533,33 @@ ul {
 .footer .social-list:not(:last-child) {
   margin-right: 32px;
 }
+
+.hero-about {
+  padding-top: 100px;
+  border: 1px solid transparent;
+}
+
+.hero-about-text {
+  display: flex;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+
+.hero-about .title-box {
+  margin-top: 99px;
+}
+
+.hero-about .discription-box {
+  margin-top: 107px;
+  margin-bottom: 136px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.hero-about .discription-box p {
+  margin-bottom: 0;
+}
+
 .kind {
   width: 210px;
   height: 210px;
