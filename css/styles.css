@@ -483,6 +483,10 @@ ul {
   letter-spacing: 0.05em;
 }
 
+.footer-dark {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
 
 .top-footer {
   display: flex;
@@ -500,8 +504,12 @@ ul {
   border: 1px solid var(--accent-color);
 }
 
-.footer .item {
+.footer .item:not(:last-child) {
   margin-bottom: 18px;
+}
+
+.footer .invitation {
+  margin-bottom: 64px;
 }
 
 .main-nav,
@@ -510,11 +518,21 @@ ul {
 }
 
 .low-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 43px;
+  padding-bottom: 43px;
   font-size: 14px;
   line-height: 1;
-  /* background-color: var(--lite-color); */
 }
 
+.low-footer p {
+  margin-bottom: 0;
+}
+
+.footer .social-list:not(:last-child) {
+  margin-right: 32px;
+}
 .kind {
   width: 210px;
   height: 210px;
