@@ -151,7 +151,7 @@ ul {
   line-height: 1;
   background-color: gray;
   color: var(--lite-color);
-  background-image: url(/images/main/img1.jpg) ;
+  background-image: url(../images/main/img1.jpg) ;
   background-repeat: no-repeat;
   background-position: right;
   background-size: 1500px;
@@ -529,19 +529,47 @@ ul {
   line-height: 1.4;
 }
 
-.hero-about .discription-box p {
-  margin-bottom: 0;
-}
 
 .hero-about img {
   margin-bottom: 100px;
 }
 
-.hero-about span {
+.hero-about .benefits-number {
   display: block;
   margin-bottom: 34px;
 }
 
+.hero-about .discription-box p {
+  margin-bottom: 0;
+}
+
+.annotation-content {
+  padding-right: 315px;
+  margin-bottom: 200px;
+}
+
+.annotation-text {
+  font-size: 27px;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.annotation-image {
+  width: 1200px;
+  height: 675px;
+  /* padding-top: 568px; */
+  /* padding-right: 830px; */
+  /* padding-bottom: 70px; */
+  /* padding-left: 100px; */
+  /* font-size: 14px; */
+  /* line-height: 1; */
+  background-color: gray;
+  /* color: var(--lite-color); */
+  background-image: url(../images/main/img1.jpg) ;
+  background-repeat: no-repeat;
+  background-position: right;
+  /* background-size: 1200px; */
+}
 .kind {
   width: 210px;
   height: 210px;
