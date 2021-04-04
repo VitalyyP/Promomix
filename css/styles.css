@@ -224,10 +224,6 @@ ul {
   padding-right: 43px; 
 }
 
-.direction-item:first-child .direction-item-box{
-  padding-right: 80px;
-}
-
 .direction-icon-box {
   display: flex;
   width: 70px;
@@ -237,17 +233,17 @@ ul {
   justify-content: center;
   margin-bottom: 53px;
 }
-.direction-item .icon {
+.grid-item .icon {
   display: block;
 }
 
-.direction-item .link:hover .direction-item-box,
-.direction-item .link:focus .direction-item-box {
+.grid-item .link:hover .direction-item-box,
+.grid-item .link:focus .direction-item-box {
   background-color: var(--accent-color);
 }
 
-.direction-item .link:hover .icon,
-.direction-item .link:focus .icon {
+.grid-item .link:hover .icon,
+.grid-item .link:focus .icon {
   stroke: currentColor;
   /* stroke: var(--lite-color); */
   /* fill: var(--lite-color); */
@@ -277,14 +273,8 @@ ul {
   padding-bottom: 150px;
 }
 
-.benefits-container,
-.partners-container,
-.footer-container {
-  display: flex;
-  margin-left: -60px;
-  margin-top: -60px;
-}
 
+.flex-list,
 .grid-list {
   display: flex;
   flex-wrap: wrap;
@@ -292,7 +282,7 @@ ul {
   margin-top: -60px;
 }
 
-.container-section-title,
+.flex-item,
 .container-list {
   flex-basis: calc((100% - 60px * 2) / 2);
   margin-left: 60px;
@@ -300,13 +290,6 @@ ul {
   /* outline: 1px solid blue; */
 }
 
-.benefits .list,
-.partners .list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -60px;
-  margin-top: -60px;
-}
 
 .benefits-item {
   flex-basis: calc((100% - 60px * 2) / 2);
