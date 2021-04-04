@@ -282,8 +282,7 @@ ul {
   margin-top: -60px;
 }
 
-.flex-item,
-.container-list {
+.flex-item {
   flex-basis: calc((100% - 60px * 2) / 2);
   margin-left: 60px;
   margin-top: 60px;
@@ -291,10 +290,7 @@ ul {
 }
 
 
-.benefits-item {
-  flex-basis: calc((100% - 60px * 2) / 2);
-  margin-left: 60px;
-  margin-top: 60px;
+.benefits .item {
   line-height: 1.4;
 }
 
@@ -373,15 +369,9 @@ ul {
 }
 
 .partners .item {
-  /* display: block; */
   flex-basis: calc((100% - 60px * 3) / 3);
-  /* font-display: flex;
-  justify-content: center;;
-  align-items: center; */
-  /* height: 75px; */
   margin-top: 60px;
   margin-left: 60px;
-  /* padding: auto; */
 }
 
 .img-box {
@@ -541,6 +531,15 @@ ul {
 
 .hero-about .discription-box p {
   margin-bottom: 0;
+}
+
+.hero-about img {
+  margin-bottom: 100px;
+}
+
+.hero-about span {
+  display: block;
+  margin-bottom: 34px;
 }
 
 .kind {
