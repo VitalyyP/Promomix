@@ -263,18 +263,12 @@ ul {
   color: var(--lite-color);
 }
 
-.hero,
-.benefits,
-.partners,
-.footer-dark {
+.gray-section {
   background-color: var(--bg-color);
-  margin-left: 100px;
+  margin-left: 6.25%;
 }
 
-.hero .container,
-.benefits .container,
-.partners .container,
-.footer-dark .container {
+.gray-section .container {
   margin-left: 6.65%;
 }
 
@@ -309,8 +303,19 @@ ul {
 }
 
 .benefits-number {
+  display: block;
+  margin-bottom: 17px;
   font-size: 75px;
   line-height: 1;
+}
+
+.benefits-number::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 10px;
+  margin-bottom: 20px;
+  color: blue;
 }
 
 .works {
@@ -495,7 +500,7 @@ ul {
   padding-left: 27px;
   font-size: 12px;
   letter-spacing: 0.05em;
-  background-image: url("../images/icons/greyarrow.svg");
+  background-image: url("../images/icons/grayarrow.svg");
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: 3px;
@@ -579,7 +584,7 @@ ul {
 
 .hero-about .discription-box {
   margin-top: 107px;
-  margin-bottom: 136px;
+  margin-bottom: 474px;
   font-size: 20px;
   line-height: 1.4;
 }
@@ -596,6 +601,11 @@ ul {
 
 .hero-about .discription-box p {
   margin-bottom: 0;
+}
+
+.benefits-about {
+  padding-top: 487px;
+  padding-bottom: 151px;
 }
 
 .annotation-content {
