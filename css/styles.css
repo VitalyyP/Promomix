@@ -518,11 +518,16 @@ ul {
 }
 
 .footer-title {
+  display: block;
+  width: 310px;
+  margin-bottom: 62px;
   font-size: 30px;
   line-height: 1.2;
 }
 
 .footer .button {
+  width: 230px;
+  height: 55px;
   font-size: 12px;
   border: 1px solid var(--accent-color);
 }
