@@ -59,6 +59,7 @@ ul {
   line-height: 1;
   color: inherit;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .list {
@@ -144,12 +145,12 @@ ul {
 
 .hero {
   padding-top: 568px;
-  /* padding-right: 830px; */
+
   padding-bottom: 70px;
-  /* padding-left: 100px; */
+  
   font-size: 14px;
   line-height: 1;
-  background-color: gray;
+  
   color: var(--lite-color);
   background-image: url(../images/main/img1.jpg) ;
   background-repeat: no-repeat;
@@ -262,10 +263,19 @@ ul {
   color: var(--lite-color);
 }
 
+.hero,
 .benefits,
 .partners,
 .footer-dark {
   background-color: var(--bg-color);
+  margin-left: 100px;
+}
+
+.hero .container,
+.benefits .container,
+.partners .container,
+.footer-dark .container {
+  margin-left: 6.65%;
 }
 
 .benefits.section {
@@ -359,8 +369,39 @@ ul {
 
 .works .button,
 .news .button {
-  display: block;
+  display: flex;
+  height: 23px;
+  justify-content: flex-end;
+  align-items: center;
   margin-left: auto;
+  padding-left: 65px;
+  padding-right: 0;
+  background-image: url("../images/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+}
+
+.works .button::before,
+.news .button::before {
+  content: "";
+  display: block;
+  margin-right: 48px;
+  width: 1000px;
+  height: 1px;
+  
+  background-color: currentColor;
+}
+
+.news .button::before {
+  width: 1006px;
+}
+
+.works .button:hover,
+.works .button:focus,
+.news .button:hover,
+.news .button:focus {
+  background-image: url("../images/icons/redplus.svg");
 }
 
 .partners.section {
@@ -451,9 +492,18 @@ ul {
 }
 
 .details {
-  margin-left: 27px;
+  padding-left: 27px;
   font-size: 12px;
   letter-spacing: 0.05em;
+  background-image: url("../images/icons/greyarrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 3px;
+}
+
+.news .link:hover .details,
+.news .link:focus .details {
+  background-image: url("../images/icons/redarrow.svg");
 }
 
 .footer-dark {
