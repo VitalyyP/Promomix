@@ -79,7 +79,7 @@ ul {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 .content-in-row {
@@ -234,8 +234,9 @@ ul {
   justify-content: center;
   margin-bottom: 53px;
 }
-.grid-item .icon {
+.direction-icon-box .icon {
   display: block;
+  fill: var(--accent-color);
 }
 
 .grid-item .link:hover .direction-item-box,
@@ -245,12 +246,9 @@ ul {
 
 .grid-item .link:hover .icon,
 .grid-item .link:focus .icon {
+  fill: var(--lite-color);
   stroke: currentColor;
-  /* stroke: var(--lite-color); */
-  /* fill: var(--lite-color); */
 }
-
-
 
 .services .link {
   font-size: 19px;
@@ -537,12 +535,45 @@ ul {
   border: 1px solid var(--accent-color);
 }
 
-.footer .item:not(:last-child) {
-  margin-bottom: 18px;
+.footer .link {
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .footer .invitation {
+  padding-right: 20px;
   margin-bottom: 64px;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.footer-form input {
+  border: none;
+  background-color: var(--bg-color);
+}
+
+.footer-form input::placeholder {
+  color:var(--text-color)
+
+}
+
+.footer-form button {
+  height: 18px;
+  border: none;
+  fill: var(--text-color);
+  background-color:var(--bg-color);
+}
+
+.footer-form button:hover {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .main-nav,
@@ -553,13 +584,15 @@ ul {
 .low-footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 43px;
-  padding-bottom: 43px;
+  align-items: center;
+  padding-top: 34px;
+  padding-bottom: 34px;
   font-size: 14px;
   line-height: 1;
 }
 
 .low-footer p {
+ 
   margin-bottom: 0;
 }
 
