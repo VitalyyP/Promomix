@@ -90,7 +90,7 @@ ul {
 .section {
   padding-top: 200px;
   padding-bottom: 200px;
-  /* outline: 1px solid blue; */
+  outline: 1px solid blue;
 }
 
 
@@ -296,13 +296,15 @@ ul {
   line-height: 1.4;
 }
 
-.benefits .container-p {
+.benefits .container-p,
+.benefits-about .container-p {
   width: 155px;
 }
 
 .benefits-number {
   display: block;
-  margin-bottom: 17px;
+  height: 75px;
+  margin-bottom: 37px;
   font-size: 75px;
   line-height: 1;
 }
@@ -311,9 +313,10 @@ ul {
   content: "";
   display: block;
   width: 70px;
-  height: 10px;
-  margin-bottom: 20px;
-  color: blue;
+  height: 1px;
+  margin-top: 17px;
+  /* margin-bottom: 20px; */
+  background-color: var(--label-color);
 }
 
 .works {
@@ -480,7 +483,7 @@ ul {
   margin-left: 60px; */
 }
 
-.news .discription {
+.news .description {
   margin-bottom: 40px;
 }
 
@@ -489,8 +492,8 @@ ul {
   height: 100%;
 }
 
-.news .link:hover .discription,
-.news .link:focus .discription {
+.news .link:hover .description,
+.news .link:focus .description {
   color: var(--text-color);
 }
 
@@ -602,7 +605,11 @@ ul {
 
 .hero-about {
   padding-top: 100px;
-  border: 1px solid transparent;
+  padding-bottom: 0;
+}
+
+.hero-about .container {
+  padding-bottom: 474px;
 }
 
 .hero-about-text {
@@ -612,35 +619,52 @@ ul {
 }
 
 .hero-about .title-box {
-  margin-top: 99px;
+  /* margin-top: 99px; */
 }
 
-.hero-about .discription-box {
-  margin-top: 107px;
-  margin-bottom: 474px;
+.hero-about .description-box {
+  /* margin-top: 107px; */
+  /* margin-bottom: 474px; */
   font-size: 20px;
   line-height: 1.4;
 }
 
 
-.hero-about img {
-  margin-bottom: 100px;
-}
 
 .hero-about .benefits-number {
-  display: block;
-  margin-bottom: 34px;
+  height: 72px;
+  margin-bottom: 35px;
 }
 
-.hero-about .discription-box p {
+.hero-about .benefits-number::after {
+  margin-top: 15px;
+}
+
+.hero-about .description-box p {
   margin-bottom: 0;
 }
 
 .benefits-about {
+  position: relative;
   padding-top: 487px;
   padding-bottom: 151px;
 }
 
+.benefits-about img {
+  position: absolute;
+  top: -337px;
+  right: 0;
+  /* width: 1400px; */
+  /* margin-bottom: 100px; */
+}
+
+.benefits-about .container {
+  padding-bottom: 0;
+}
+
+.annotation {
+  padding-bottom: 0;
+}
 .annotation-content {
   padding-right: 315px;
   margin-bottom: 200px;
@@ -649,6 +673,7 @@ ul {
 .annotation-text {
   font-size: 27px;
   line-height: 1.4;
+  font-weight: 500;
   margin-bottom: 0;
 }
 
@@ -668,6 +693,178 @@ ul {
   background-position: right;
   /* background-size: 1200px; */
 }
+
+.history {
+  padding-top: 190px;
+  padding-bottom: 500px;
+}
+
+.history .container {
+  position: relative;
+
+}
+
+.history .section-title {
+  padding-right: 300px;
+  font-size: 40px;
+}
+
+.history-number {
+  position: relative;
+  display: block;
+  padding-bottom: 15px;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.history-number::after {
+  content: "";
+  position: absolute;
+  left: -90px;
+  top: 43px;
+  display: block;
+  width: 1px;
+  height: 257px;
+  background-color: #dbdee3;
+}
+
+/* .history-number:last-child::after {
+  height: 256px;
+} */
+
+.dot {
+  position: absolute;
+  top: 13px;
+  left: -90px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* display: inline-block; */
+  
+}
+.dot-1 {
+  height: 61px;
+  width: 61px;
+  background-color: #f2d7d8;
+}
+
+.dot-2 {
+  height: 31px;
+  width: 31px;
+  background-color: #f2f4f7;
+}
+
+.dot-3 {
+  height: 13px;
+  width: 13px;
+  background-color: var(--accent-color);
+}
+
+.history-item:not(:last-child) {
+  /* padding-bottom: 76px; */
+  height: 189px;
+}
+
+.history-item p {
+  margin-bottom: 0;
+}
+
+.history img {
+  position: absolute;
+  bottom: -837px;;
+  left: 0;
+}
+
+.equipment {
+  padding-top: 537px;
+}
+
+.equipment .list {
+  list-style-type: none; /* Убираем исходные маркеры */
+  counter-reset: my-counter; /* Задаём имя счетчика */
+}
+
+
+.equipment .list::before {
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 1px;
+  background-color: var(--label-color);
+}
+
+.equipment-label-manufacturer {
+  /* position: relative; */
+  padding-top: 27px;
+  padding-bottom: 33px;
+}
+
+.equipment-label-manufacturer::before {
+  content:"0";
+  position: absolute;
+  display: block;
+  top: 26px;
+  left: 0;
+  color: var(--label-color);
+}
+
+.equipment .list-item {
+  position: relative;
+  list-style-type: none; /* Убираем исходные маркеры */
+  counter-reset: my-counter; /* Задаём имя счетчика */
+}
+
+.equipment .list-item::after {
+  position: absolute;
+  top: 26px;
+  left: 8px;
+  content: counter(my-counter); /* Выводим число */
+  counter-increment: my-counter; /* Увеличиваем значение счётчика */
+  color: var(--label-color);
+  
+}
+
+.equipment-label-manufacturer {
+  margin-top: 0;
+  align-items: center;
+}
+
+.equipment-label-manufacturer .flex-item {
+  margin-top: 0;
+}
+
+.equipment-label span {
+  padding-left: 87px;
+}
+.equipment-label span,
+.equipment-model {
+  display: block;
+  height: 20px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.equipment-manufacturer span {
+  display: block;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.equimpent-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 343px;
+}
+
+.equipment-model-description {
+  padding-top: 60px;
+}
+
+
+
+
+
 .kind {
   width: 210px;
   height: 210px;
