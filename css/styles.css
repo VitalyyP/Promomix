@@ -333,7 +333,7 @@ ul {
   font-weight: 500;
 }
 
-.works p {
+.works-label {
   font-size: 11px;
   letter-spacing: 0.05em;
 }
@@ -662,7 +662,8 @@ ul {
   padding-bottom: 0;
 }
 
-.annotation {
+.annotation,
+.equipment {
   padding-bottom: 0;
 }
 .annotation-content {
@@ -780,6 +781,7 @@ ul {
 }
 
 .equipment .list {
+  position: relative;
   list-style-type: none; /* Убираем исходные маркеры */
   counter-reset: my-counter; /* Задаём имя счетчика */
 }
@@ -795,9 +797,12 @@ ul {
 
 .equipment-label-manufacturer {
   /* position: relative; */
-  padding-top: 27px;
-  padding-bottom: 33px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin-top: 0;
+  align-items: center;
 }
+
 
 .equipment-label-manufacturer::before {
   content:"0";
@@ -808,10 +813,24 @@ ul {
   color: var(--label-color);
 }
 
-.equipment .list-item {
-  position: relative;
+.equipment-label-manufacturer::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 1px;
+  background-color: var(--label-color);
+}
+
+.equipment .list {
   list-style-type: none; /* Убираем исходные маркеры */
   counter-reset: my-counter; /* Задаём имя счетчика */
+}
+.equipment .list-item {
+  position: relative;
+ 
 }
 
 .equipment .list-item::after {
@@ -824,10 +843,6 @@ ul {
   
 }
 
-.equipment-label-manufacturer {
-  margin-top: 0;
-  align-items: center;
-}
 
 .equipment-label-manufacturer .flex-item {
   margin-top: 0;
@@ -850,15 +865,58 @@ ul {
   line-height: 1;
 }
 
+.equipment .content-in-row {
+  justify-content: space-between;
+}
+
+
+.equipment .button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 23px;
+  height: 35px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn-minus {
+  width: 23px;
+  height: 1px;
+  background-color: var(--text-color);
+}
+
+.is-hidden {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.equipment-manufacturer .button {
+  /* display: flex;
+  width: 23px;
+  height: 23px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  border: none; */
+  background-image: url("../images/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .equimpent-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 570px;
   height: 343px;
+
 }
 
 .equipment-model-description {
   padding-top: 60px;
+  padding-right: 30px;
 }
 
 
