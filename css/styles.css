@@ -1009,11 +1009,12 @@ footer .button:focus,
   bottom: 6px;
   right: 6px;
   display: block;
-  width: 274px;
+  width: 275px;
   height: 40px;
   font-size: 14px;
   line-height: 1.43;
   color: var(--label-color);
+  margin-bottom: 0;
 }
 
 
