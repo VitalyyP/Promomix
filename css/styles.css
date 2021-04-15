@@ -79,7 +79,7 @@ ul {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .content-in-row {
@@ -90,7 +90,7 @@ ul {
 .section {
   padding-top: 200px;
   padding-bottom: 200px;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 
@@ -957,6 +957,18 @@ footer .button:focus,
 .request {
   margin-top: -60px;
   padding-top: 0;
+}
+
+.request .section-title {
+  margin-bottom: 34px;
+}
+
+.request .section-title + p{
+  display: block;
+  width: 320px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  line-height: 1.4;
 }
 
 .form {
