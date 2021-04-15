@@ -361,19 +361,23 @@ ul {
 .works .item:last-child {
   margin-bottom: 83px;
 }
-.works img {
+.works img,
+.works-about img {
   margin-bottom: 20px;
 }
 
-.works h3 {
+.works h3,
+.works-about h3 {
   margin-bottom: 15px;
 }
 
-.works a + p {
+.works a + p 
+.work-about a + p {
   margin-bottom: 0;
 }
 
 .works .button,
+.works-about .button,
 .news .button {
   display: flex;
   height: 23px;
@@ -389,6 +393,7 @@ ul {
 }
 
 .works .button::before,
+.works-about .button:before,
 .news .button::before {
   content: "";
   display: block;
@@ -405,6 +410,8 @@ ul {
 
 .works .button:hover,
 .works .button:focus,
+.works-about .button:hover,
+.works-about .button:focus,
 .news .button:hover,
 .news .button:focus {
   background-image: url("../images/icons/redplus.svg");
@@ -415,7 +422,8 @@ ul {
   padding-bottom: 167px;
 }
 
-.partners .item {
+.partners .item,
+.works-about-list .item {
   flex-basis: calc((100% - 60px * 3) / 3);
   margin-top: 60px;
   margin-left: 60px;
@@ -919,9 +927,51 @@ ul {
   padding-right: 30px;
 }
 
+.works-about {
+  overflow: hidden;
+}
+.works-about-list {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+
+.works-about-list .item:nth-child(4){
+  position: absolute;
+  /* display: block; */
+  left: 1260px;
+  width: calc((100% - 60px * 3) / 3);
+}
+
+.request {
+  margin-top: -60px;
+  padding-top: 0;
+}
 
 
+.form__input-text,
+.form__input-tel,
+.form__input-comment,
+.form__input-file {
+  display: block;
+  height: 50px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--text-color);
+  border: none;
+  border-bottom: 1px solid var(--label-color);
+}
 
+.form__input-file {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
 
 .kind {
   width: 210px;
