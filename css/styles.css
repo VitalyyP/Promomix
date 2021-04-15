@@ -539,13 +539,21 @@ ul {
   line-height: 1.2;
 }
 
-.footer .button {
+.footer .button,
+.request .button {
   width: 230px;
   height: 55px;
   font-size: 12px;
   border: 1px solid var(--accent-color);
 }
 
+footer .button:hover,
+footer .button:focus,
+.request .button:hover,
+.request .button:focus {
+  color: var(--lite-color);
+  background-color: var(--accent-color);
+}
 .footer .link {
   display: block;
   padding-top: 9px;
@@ -951,12 +959,15 @@ ul {
   padding-top: 0;
 }
 
+.form {
+  position: relative;
+}
 
 .form__input-text,
 .form__input-tel,
-.form__input-comment,
-.form__input-file {
+.form__input-comment {
   display: block;
+  width: 100%;
   height: 50px;
   margin-bottom: 30px;
   font-size: 18px;
@@ -966,12 +977,45 @@ ul {
   border-bottom: 1px solid var(--label-color);
 }
 
-.form__input-file {
-  display: inline-block;
-  margin-bottom: 0;
-  font-size: 16px;
-  font-weight: 500;
+.form__input-comment {
+  margin-bottom: 46px;
 }
+
+.form__input-file {
+
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.form__label-input-file {
+  display: block;
+  width: 133px;
+  height: 26px;
+  margin-bottom: 42px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.form__policy {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  display: block;
+  width: 274px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--label-color);
+}
+
 
 .kind {
   width: 210px;
