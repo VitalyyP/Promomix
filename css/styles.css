@@ -79,7 +79,7 @@ ul {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .content-in-row {
@@ -90,7 +90,7 @@ ul {
 .section {
   padding-top: 200px;
   padding-bottom: 200px;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
 }
 
 
@@ -1031,6 +1031,7 @@ footer .button:focus,
 
 .features {
   padding-top: 100px;
+  padding-bottom: 120px;
 }
 
 .features__page-title {
@@ -1058,7 +1059,7 @@ footer .button:focus,
 
 .features__item .flex-list::before {
   position: absolute;
-  top: 0;
+  top: 26px;
   right: 0;
   content: "";
   display: block;
@@ -1077,7 +1078,28 @@ footer .button:focus,
   height: 130px;
   padding-top: 37px;
   padding-left: 37px;
+  padding-right: 113px;
 }
+
+.features__box:focus,
+.features__box:hover {
+  background-color: var(--accent-color);
+}
+
+.features__box:focus .icon,
+.features__box:hover .icon {
+   fill: var(--lite-color);
+}
+
+.features__box:focus .link,
+.features__box:hover .link {
+  color: var(--lite-color);
+}
+
+.features .list.flex-list {
+  padding-top: 13px;
+  padding-bottom: 150px;
+} 
 
 .features .icon {
   display: inline-flexbox;
@@ -1088,6 +1110,52 @@ footer .button:focus,
 .features__label {
   display: inline-flexbox;
   font-size: 22px;
+}
+
+.under-header {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.features__row {
+  display: flex;
+}
+
+.features__row .link {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.features__row--item {
+  max-width: 150px;
+  /* flex-basis: calc(100% / 8); */
+}
+
+.features__row--item:hover,
+.features__row--item:focus {
+  background-color: var(--accent-color);
+}
+
+.features__row--item:hover .icon,
+.features__row--item:focus .icon {
+  fill: var(--lite-color)
+}
+
+.features__row--item:hover .link,
+.features__row--item:focus .link {
+  color: var(--lite-color)
+}
+
+.features__row .direction-item-box {
+  height: 150px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.features__row .direction-icon-box {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 35px;
 }
 
 .kind {
