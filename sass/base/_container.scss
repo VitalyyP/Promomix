@@ -1,0 +1,10 @@
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid blue;
+
+  .section--gray & {
+    margin-left: 6.65%;
+  }
+}

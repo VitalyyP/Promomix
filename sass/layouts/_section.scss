@@ -1,0 +1,26 @@
+.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /* outline: 1px solid blue; */
+}
+
+.section--gray {
+  background-color: var(--bg-color);
+  margin-left: 6.25%;
+}
+
+.section__title {
+  margin-bottom: 100px;
+  font-size: 37px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.section__label {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--label-color);
+}

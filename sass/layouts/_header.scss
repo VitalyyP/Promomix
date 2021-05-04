@@ -1,0 +1,49 @@
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  line-height: 1;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-button {
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  &:hover, &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-button__search {
+  display: flex;
+  align-items: center;
+  margin-right: 131px;
+}
+
+.header-button__proposal {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.header__link {
+  margin-right: 112px;
+  font-size: 15px;
+}
+
+.header-button__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 11px;
+  fill: currentColor;
+}
+

@@ -1,0 +1,84 @@
+
+
+.works .button,
+.works-about .button,
+.news .button {
+  display: flex;
+  height: 23px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  padding-left: 65px;
+  padding-right: 0;
+  background-image: url('../images/icons/plus.svg');
+  font-weight: 500;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  cursor: pointer;
+}
+
+.works .button::before,
+.works-about .button:before,
+.news .button::before {
+  content: '';
+  display: block;
+  margin-right: 48px;
+  width: 1000px;
+  height: 1px;
+
+  background-color: currentColor;
+}
+
+.news .button::before {
+  width: 1006px;
+}
+
+.works .button:hover,
+.works .button:focus,
+.works-about .button:hover,
+.works-about .button:focus,
+.news .button:hover,
+.news .button:focus {
+  background-image: url('../images/icons/redplus.svg');
+}
+
+.footer .button,
+.proposal .button {
+  width: 230px;
+  height: 55px;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+}
+
+footer .button:hover,
+footer .button:focus,
+.proposal .button:hover,
+.proposal .button:focus {
+  color: var(--lite-color);
+  background-color: var(--accent-color);
+}
+
+.equipment .button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 23px;
+  height: 35px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.equipment-manufacturer .button {
+  /* display: flex;
+  width: 23px;
+  height: 23px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  border: none; */
+  background-image: url('../images/icons/plus.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}

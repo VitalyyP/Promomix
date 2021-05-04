@@ -1,0 +1,20 @@
+.accent {
+  color: var(--accent-color);
+}
+
+.block {
+  display: block;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.content-in-row {
+  display: flex;
+  align-items: center;
+}

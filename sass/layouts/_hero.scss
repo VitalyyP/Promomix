@@ -1,0 +1,21 @@
+.hero {
+  padding-top: 568px;
+
+  padding-bottom: 70px;
+
+  font-size: 14px;
+  line-height: 1;
+
+  color: var(--lite-color);
+  background-image: url(../images/main/img1.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 1500px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 162px;
+}
