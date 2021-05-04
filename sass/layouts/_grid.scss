@@ -8,3 +8,12 @@
   flex-basis: calc((100% - 60px * var(--grid__item)) / var(--grid__item));
   margin: 30px;
 }
+
+.grid--work {
+  align-items: center;
+  margin: 0 -30px;
+}
+
+.grid__item--work {
+  margin: 0 30px;
+}

@@ -205,14 +205,14 @@ ul {
   margin-top: 60px;
 }
 
-.direction-item-box {
+.services__direction {
   height: 255px;
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 43px;
 }
 
-.direction-icon-box {
+.services__thumb {
   display: flex;
   width: 70px;
   height: 70px;
@@ -221,13 +221,13 @@ ul {
   justify-content: center;
   margin-bottom: 53px;
 }
-.direction-icon-box .icon {
+.services__thumb .icon {
   display: block;
   fill: var(--accent-color);
 }
 
-.grid__item .link:hover .direction-item-box,
-.grid__item .link:focus .direction-item-box {
+.grid__item .link:hover .services__direction,
+.grid__item .link:focus .services__direction {
   background-color: var(--accent-color);
 }
 
@@ -1117,13 +1117,13 @@ footer .button:focus,
   color: var(--lite-color);
 }
 
-.features__row .direction-item-box {
+.features__row .services__direction {
   height: 150px;
   padding-top: 20px;
   padding-left: 20px;
 }
 
-.features__row .direction-icon-box {
+.features__row .services__thumb {
   width: 35px;
   height: 35px;
   margin-bottom: 35px;

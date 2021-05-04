@@ -13,7 +13,9 @@
 @import './layouts/section';
 @import './layouts/header';
 @import './layouts/hero';
+@import './layouts/services';
 @import './layouts/benefits';
+@import './layouts/works';
 
 // .container-page-title {
 //   width: 570px;
@@ -21,100 +23,6 @@
 // }
 
 
-
-.direction-item-box {
-  height: 255px;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 43px;
-}
-
-.direction-icon-box {
-  display: flex;
-  width: 70px;
-  height: 70px;
-  /* padding-left: auto; */
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 53px;
-}
-.direction-icon-box .icon {
-  display: block;
-  fill: var(--accent-color);
-}
-
-.grid__item .link:hover .direction-item-box,
-.grid__item .link:focus .direction-item-box {
-  background-color: var(--accent-color);
-}
-
-.grid__item .link:hover .icon,
-.grid__item .link:focus .icon {
-  fill: var(--lite-color);
-  stroke: currentColor;
-}
-
-.services .link {
-  font-size: 19px;
-  line-height: 1.3;
-}
-
-.services .link:hover,
-.serveces .link:focus {
-  background-color: var(--accent-color);
-  color: var(--lite-color);
-}
-
-
-.works {
-  padding-bottom: 205px;
-  line-height: 1;
-}
-
-.works .section__title {
-  margin-bottom: 60px;
-}
-.works h3,
-.news h3 {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.works-label {
-  font-size: 11px;
-  letter-spacing: 0.05em;
-}
-
-.works .list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-left: -60px;
-  /* margin-top: -60px; */
-}
-
-.works .item {
-  flex-basis: calc((100% - 60px * 2) / 2);
-  margin-left: 60px;
-  /* margin-top: 60px; */
-}
-
-.works .item:last-child {
-  margin-bottom: 83px;
-}
-.works img,
-.works-about img {
-  margin-bottom: 20px;
-}
-
-.works h3,
-.works-about h3 {
-  margin-bottom: 15px;
-}
-
-.works a + p .work-about a + p {
-  margin-bottom: 0;
-}
 
 .partners.section {
   padding-top: 166px;
@@ -794,13 +702,13 @@
   color: var(--lite-color);
 }
 
-.features__row .direction-item-box {
+.features__row .services__direction {
   height: 150px;
   padding-top: 20px;
   padding-left: 20px;
 }
 
-.features__row .direction-icon-box {
+.features__row .services__thumb {
   width: 35px;
   height: 35px;
   margin-bottom: 35px;

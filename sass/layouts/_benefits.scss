@@ -8,25 +8,20 @@
   line-height: 1.4;
 }
 
-.benefits .container-p,
-.benefits-about .container-p {
-  width: 155px;
-}
-
-.benefits-number {
+.benefits__number {
   display: block;
   height: 75px;
   margin-bottom: 37px;
   font-size: 75px;
   line-height: 1;
-}
-
-.benefits-number::after {
-  content: '';
-  display: block;
-  width: 70px;
-  height: 1px;
-  margin-top: 17px;
-  /* margin-bottom: 20px; */
-  background-color: var(--label-color);
+  
+  &::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 1px;
+    margin-top: 17px;
+    /* margin-bottom: 20px; */
+    background-color: var(--label-color);
+  }
 }

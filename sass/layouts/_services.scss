@@ -1,0 +1,42 @@
+.services__link {
+  font-size: 19px;
+  line-height: 1.3;
+  
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--lite-color);
+  }
+}
+
+.services__direction {
+  height: 255px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 43px;
+  
+  .services__link:hover &,
+  .services__link:focus & {
+    background-color: var(--accent-color);
+  }
+}
+
+.services__thumb {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 53px;
+}
+
+.services__icon {
+  display: block;
+  fill: var(--accent-color);
+  
+  .services__link:hover &,
+  .services__link:focus & {
+    fill: var(--lite-color);
+    stroke: currentColor;
+  }
+}
