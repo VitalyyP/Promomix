@@ -12,37 +12,70 @@
     <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+     <header class="header">
+      <label for="menu__toggle" class="menu__toggle-label">
+        <div class="menu__toggle-box">
+          <input
+            type="checkbox"
+            class="menu__toggle"
+            name="menu"
+            id="menu__toggle"
+          />
+
+          <span class="menu__line"></span>
+        </div>
+      </label>
+      <nav class="grid__item main-nav">
+        <ul class="list">
+          <li class="item">
+            <a class="link" href="./html/about.html">О компании</a>
+          </li>
+          <li class="item">
+            <a class="link" href="./html/features.html">Услуги</a>
+          </li>
+          <li class="item">
+            <a class="link" href="./html/works.html">Наши работы</a>
+          </li>
+          <li class="item">
+            <a class="link" href="./html/services.html">Сервис</a>
+          </li>
+          <li class="item">
+            <a class="link" href="./html/complex.html">Комплексные решения</a>
+          </li>
+          <li class="item">
+            <a class="link" href="./html/posts.html">Статьи и новости</a>
+          </li>
+          <li class="item">
+            <a class="link" href="./html/contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
       <div class="container">
-        <div class="content-in-row">
+        <div class="header__content">
           <a class="link" href="../index.html"
-            ><img src="../images/icons/logo.svg" alt=""
-          /></a>
-          <ul class="list nav">
-            <li class="list-item">
-              <button class="button content-in-row" type="button">
-                <svg class="icon">
-                  <use href="./images/sprite.svg#icon-search"></use>
-                </svg>
-                Поиск
-              </button>
-            </li>
-            <li class="list-item">
-              <a class="link upper" href="tel:84964290900">8 496 429 09 00</a>
-            </li>
-            <li class="list-item">
-              <button class="button upper bold" type="button">
-                Оставить заявку
-              </button>
-            </li>
-          </ul>
+            ><img src="../images/icons/logo.svg" alt="" />
+          </a>
+          <div class="header__nav">
+            <button class="header-button header-button__search" type="button">
+              <svg class="header-button__icon">
+                <use href="../images/sprite.svg#icon-search"></use>
+              </svg>
+              Поиск
+            </button>
+            <a class="link header__link" href="tel:84964290900"
+              >8 496 429 09 00
+            </a>
+            <button class="header-button header-button__proposal" type="button">
+              Оставить заявку
+            </button>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-about section">
         <div class="container">
-          <div class="hero-about-text">
+          <div class="grid">
             <div class="grid__item title-box">
               <h1 class="page-title">О компании</h1>
             </div>
@@ -55,41 +88,36 @@
             </div>
           </div>
         </div>
+        <img class="hero-about__img"
+          src="../images/about/our-team.jpg"
+          width="1400"
+          height="675"
+          alt=""
+        />
         <div class="benefits-about section section--gray">
-          <img
-            src="../images/about/our-team.jpg"
-            width="1400"
-            height="675"
-            alt=""
-          />
           <div class="container">
             <h2 class="visually-hidden">Наши преимущества</h2>
-            <ul class="list grid">
-              <li class="benefits-item grid__item">
-                <span class="accent benefits-number">18+</span>
-                <div class="container-p">
-                  <p>лет опыта на рекламном рынке</p>
-                </div>
-              </li>
-              <li class="benefits-item grid__item">
-                <span class="accent benefits-number">250+</span>
-                <div class="container-p">
-                  <p>реализованных проектов</p>
-                </div>
-              </li>
-              <li class="benefits-item grid__item">
-                <span class="accent benefits-number">37</span>
-                <div class="container-p">
-                  <p>квалифицированных сотрудников</p>
-                </div>
-              </li>
-              <li class="benefits-item grid__item">
-                <span class="accent benefits-number">14+</span>
-                <div class="container-p">
-                  <p>профессионального оборудования</p>
-                </div>
-              </li>
-            </ul>
+           <ul class="list grid">
+                <li class="benefits__item grid__item">
+                  <span class="accent benefits__number">18+</span>
+                  <span class="block">лет опыта на </span
+                  ><span> рекламном рынке</span>
+                </li>
+                <li class="benefits__item grid__item">
+                  <span class="accent benefits__number">250+</span>
+                  <span class="block">реализованных</span><span>проектов</span>
+                </li>
+                <li class="benefits__item grid__item">
+                  <span class="accent benefits__number">37</span>
+                  <span class="block">квалифицированных</span
+                  ><span>сотрудников</span>
+                </li>
+                <li class="benefits__item grid__item">
+                  <span class="accent benefits__number">14+</span>
+                  <span class="block">профессионального</span
+                  ><span>оборудования</span>
+                </li>
+              </ul>
           </div>
         </div>
       </section>
@@ -117,22 +145,23 @@
           </h2>
           <ul class="list grid">
             <li class="grid__item">
-              <a class="link" href="">
+              <a class="link services__link" href="">
                 <div class="services__direction">
                   <div class="services__thumb">
-                    <svg class="icon" width="55" height="55">
+                    <svg class="services__icon" width="55" height="55">
                       <use href="../images/sprite.svg#icon-codepen"></use>
                     </svg>
                   </div>
-                  Наружная реклама
+                  Наружная<br />
+                  реклама
                 </div>
               </a>
             </li>
             <li class="grid__item">
-              <a class="link" href="">
+              <a class="link services__link" href="">
                 <div class="services__direction">
                   <div class="services__thumb">
-                    <svg class="icon" width="55" height="47">
+                    <svg class="services__icon" width="55" height="47">
                       <use href="../images/sprite.svg#icon-printer"></use>
                     </svg>
                   </div>
@@ -141,10 +170,10 @@
               </a>
             </li>
             <li class="grid__item">
-              <a class="link" href="../html/polygraphy.html">
+              <a class="link services__link" href="./html/polygraphy.html">
                 <div class="services__direction">
                   <div class="services__thumb">
-                    <svg class="icon" width="55" height="55">
+                    <svg class="services__icon" width="55" height="55">
                       <use href="../images/sprite.svg#icon-copy"></use>
                     </svg>
                   </div>
@@ -153,10 +182,10 @@
               </a>
             </li>
             <li class="grid__item">
-              <a class="link" href="">
+              <a class="link services__link" href="">
                 <div class="services__direction">
                   <div class="services__thumb">
-                    <svg class="icon" width="55" height="52">
+                    <svg class="services__icon" width="55" height="52">
                       <use href="../images/sprite.svg#icon-beer"></use>
                     </svg>
                   </div>
@@ -165,10 +194,10 @@
               </a>
             </li>
             <li class="grid__item">
-              <a class="link" href="">
+              <a class="link services__link" href="">
                 <div class="services__direction">
                   <div class="services__thumb">
-                    <svg class="icon" width="55" height="50">
+                    <svg class="services__icon" width="55" height="50">
                       <use href="../images/sprite.svg#icon-chalkboard"></use>
                     </svg>
                   </div>
@@ -177,10 +206,10 @@
               </a>
             </li>
             <li class="grid__item">
-              <a class="link" href="">
+              <a class="link services__link" href="">
                 <div class="services__direction">
                   <div class="services__thumb">
-                    <svg class="icon" width="58" height="53">
+                    <svg class="services__icon" width="58" height="53">
                       <use href="../images/sprite.svg#icon-t-shirt"></use>
                     </svg>
                   </div>
@@ -189,10 +218,10 @@
               </a>
             </li>
             <li class="grid__item">
-              <a class="link" href="">
+              <a class="link services__link" href="">
                 <div class="services__direction">
                   <div class="services__thumb">
-                    <svg class="icon" width="55" height="55">
+                    <svg class="services__icon" width="55" height="55">
                       <use href="../images/sprite.svg#icon-bus"></use>
                     </svg>
                   </div>
@@ -201,10 +230,10 @@
               </a>
             </li>
             <li class="grid__item">
-              <a class="link" href="../html/features.html">
+              <a class="link services__link" href="./html/features.html">
                 <div class="services__direction">
                   <div class="services__thumb">
-                    <svg class="icon" width="50" height="40">
+                    <svg class="services__icon" width="50" height="40">
                       <use href="../images/sprite.svg#icon-arrow"></use>
                     </svg>
                   </div>
@@ -290,8 +319,8 @@
       <section class="equipment section">
         <div class="container">
           <h2 class="section__title">Оборудование</h2>
-          <ol class="list">
-            <li class="list-item">
+          <ol class="equipment__list">
+            <li class="equipment__item">
               <div class="equipment-label-manufacturer grid content-in-row">
                 <div class="equipment-label grid__item">
                   <span>Фрезерный станок</span>
@@ -326,7 +355,7 @@
                 </div>
               </div>
             </li>
-            <li class="list-item">
+            <li class="equipment__item">
               <div class="equipment-label-manufacturer grid content-in-row">
                 <div class="equipment-label grid__item">
                   <span>Cублимационный плоттер</span>
@@ -361,7 +390,7 @@
                 </div>
               </div>
             </li>
-            <li class="list-item">
+            <li class="equipment__item">
               <div class="equipment-label-manufacturer grid content-in-row">
                 <div class="equipment-label grid__item">
                   <span>Принтер</span>
@@ -396,7 +425,7 @@
                 </div>
               </div>
             </li>
-            <li class="list-item">
+            <li class="equipment__item">
               <div class="equipment-label-manufacturer grid content-in-row">
                 <div class="equipment-label grid__item">
                   <span>Плоттер-каттер</span>
@@ -431,7 +460,7 @@
                 </div>
               </div>
             </li>
-            <li class="list-item">
+            <li class="equipment__item">
               <div class="equipment-label-manufacturer grid content-in-row">
                 <div class="equipment-label grid__item">
                   <span>Сольвентный плоттер</span>
@@ -588,46 +617,44 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-dark section--gray">
+      <div class="section--gray">
         <div class="container">
-          <div class="top-footer">
+          <div class="top-footer grid">
             <div class="grid__item">
-              <a class="link footer-title" href=""
+              <a class="link footer__title" href=""
                 ><span class="accent" lang="en">Promomix –</span> рекламное
                 агентство полного цикла</a
               >
-              <button class="button upper" type="button">
-                Оставить заявку
-              </button>
+              <button class="button" type="button">Оставить заявку</button>
             </div>
             <div class="grid__item">
               <div class="grid">
                 <nav class="grid__item">
-                  <ul class="list main-nav">
+                  <ul class="list main-nav--footer">
                     <li class="item">
-                      <a class="link" href="../html/about.html">О компании</a>
+                      <a class="link main-nav__link " href="../html/about.html">О компании</a>
                     </li>
                     <li class="item">
-                      <a class="link" href="../html/features.html">Услуги</a>
+                      <a class="link main-nav__link " href="../html/features.html">Услуги</a>
                     </li>
                     <li class="item">
-                      <a class="link" href="../html/works.html">Наши работы</a>
+                      <a class="link main-nav__link " href="../html/works.html">Наши работы</a>
                     </li>
                     <li class="item">
-                      <a class="link" href="../html/services.html">Сервис</a>
+                      <a class="link main-nav__link " href="../html/services.html">Сервис</a>
                     </li>
                     <li class="item">
-                      <a class="link" href="../html/complex.html"
+                      <a class="link main-nav__link " href="../html/complex.html"
                         >Комплексные решения</a
                       >
                     </li>
                     <li class="item">
-                      <a class="link" href="../html/posts.html"
+                      <a class="link main-nav__link " href="../html/posts.html"
                         >Статьи и новости</a
                       >
                     </li>
                     <li class="item">
-                      <a class="link" href="../html/contacts.html">Контакты</a>
+                      <a class="link main-nav__link " href="../html/contacts.html">Контакты</a>
                     </li>
                   </ul>
                 </nav>
@@ -659,9 +686,9 @@
         <div class="low-footer">
           <p>&copy; 2011-2020 Promomix</p>
           <ul class="list social-list">
-            <li class="social-item"><a class="link" href="">Facebook</a></li>
-            <li class="social-item"><a class="link" href="">Vkontakte</a></li>
-            <li class="social-item"><a class="link" href="">Instagram</a></li>
+            <li class="social-list__item--footer"><a class="link" href="">Facebook</a></li>
+            <li class="social-list__item--footer"><a class="link" href="">Vkontakte</a></li>
+            <li class="social-list__item--footer"><a class="link" href="">Instagram</a></li>
           </ul>
         </div>
       </div>

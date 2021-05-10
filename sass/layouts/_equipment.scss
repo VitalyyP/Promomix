@@ -1,0 +1,86 @@
+.equipment {
+  padding-top: 537px;
+  padding-bottom: 0;
+}
+
+.equipment__list {
+  position: relative;
+  list-style-type: none; /* Убираем исходные маркеры */
+  counter-reset: my-counter; /* Задаём имя счетчика */
+  
+  &::before {
+    content: '';
+    display: block;
+    width: 1200px;
+    height: 1px;
+    background-color: var(--label-color);
+  }
+}
+
+.equipment__item {
+  position: relative;
+  
+  &::after {
+    position: absolute;
+    top: 26px;
+    left: 8px;
+    content: counter(my-counter); /* Выводим число */
+    counter-increment: my-counter; /* Увеличиваем значение счётчика */
+    color: var(--label-color);
+  }
+}
+
+.equipment-label-manufacturer {
+  /* position: relative; */
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin-top: 0;
+  align-items: center;
+}
+
+.equipment-label-manufacturer::before {
+  content: '0';
+  position: absolute;
+  display: block;
+  top: 26px;
+  left: 0;
+  color: var(--label-color);
+}
+
+.equipment-label-manufacturer::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 1px;
+  background-color: var(--label-color);
+}
+
+
+
+.equipment-label-manufacturer .grid__item {
+  margin-top: 0;
+}
+
+.equipment-label span {
+  padding-left: 87px;
+}
+.equipment-label span,
+.equipment-model {
+  display: block;
+  height: 20px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.equipment-manufacturer span {
+  display: block;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.equipment .content-in-row {
+  justify-content: space-between;
+}

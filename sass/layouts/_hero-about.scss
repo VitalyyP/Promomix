@@ -1,0 +1,47 @@
+.hero-about {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 0;
+  --grid__item: 2;
+}
+
+.hero-about__img {
+  position: absolute;
+  top: 300px;
+  right: 0;
+}
+
+.hero-about .container {
+  padding-bottom: 474px;
+}
+
+.hero-about-text {
+  display: flex;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+
+.hero-about .title-box {
+  /* margin-top: 99px; */
+  margin-top: 0;
+}
+
+.hero-about .description-box {
+  /* margin-top: 107px; */
+  /* margin-bottom: 474px; */
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.hero-about .benefits-number {
+  height: 72px;
+  margin-bottom: 35px;
+}
+
+.hero-about .benefits-number::after {
+  margin-top: 15px;
+}
+
+.hero-about .description-box p {
+  margin-bottom: 0;
+}

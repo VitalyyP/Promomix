@@ -257,6 +257,10 @@ footer .button:focus,
   margin-right: 50px;
 }
 
+.social-list__item--footer:not(:last-child) {
+  margin-right: 32px;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -540,26 +544,29 @@ footer .button:focus,
 }
 
 .footer {
-  padding-top: 100px;
   --grid__item: 2;
 }
 
 .top-footer {
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-bottom: 0;
 }
 
-.footer-title {
-  display: block;
-  width: 310px;
-  margin-bottom: 62px;
-  font-size: 30px;
-  line-height: 1.2;
-}
-
-.footer .link {
+.main-nav__link {
   display: block;
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.footer__title {
+  display: block;
+  width: 310px;
+  margin-bottom: 62px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 30px;
+  line-height: 1.2;
 }
 
 .footer .invitation {
@@ -596,8 +603,9 @@ footer .button:focus,
   cursor: pointer;
 }
 
-.main-nav-footer,
-.placeholder {
+.main-nav--footer {
+  margin-top: -5px;
+  margin-bottom: -6px;
   line-height: 1;
 }
 
@@ -605,8 +613,8 @@ footer .button:focus,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 43px;
+  padding-bottom: 43px;
   font-size: 14px;
   line-height: 1;
 }
@@ -617,6 +625,54 @@ footer .button:focus,
 
 .footer .social-list:not(:last-child) {
   margin-right: 32px;
+}
+
+.hero-about {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 0;
+  --grid__item: 2;
+}
+
+.hero-about__img {
+  position: absolute;
+  top: 300px;
+  right: 0;
+}
+
+.hero-about .container {
+  padding-bottom: 474px;
+}
+
+.hero-about-text {
+  display: flex;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+
+.hero-about .title-box {
+  /* margin-top: 99px; */
+  margin-top: 0;
+}
+
+.hero-about .description-box {
+  /* margin-top: 107px; */
+  /* margin-bottom: 474px; */
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.hero-about .benefits-number {
+  height: 72px;
+  margin-bottom: 35px;
+}
+
+.hero-about .benefits-number::after {
+  margin-top: 15px;
+}
+
+.hero-about .description-box p {
+  margin-bottom: 0;
 }
 
 .history {
@@ -692,6 +748,96 @@ footer .button:focus,
   position: absolute;
   bottom: -807px;
   left: 0;
+}
+
+.equipment {
+  padding-top: 537px;
+  padding-bottom: 0;
+}
+
+.equipment__list {
+  position: relative;
+  list-style-type: none;
+  /* Убираем исходные маркеры */
+  counter-reset: my-counter;
+  /* Задаём имя счетчика */
+}
+
+.equipment__list::before {
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 1px;
+  background-color: var(--label-color);
+}
+
+.equipment__item {
+  position: relative;
+}
+
+.equipment__item::after {
+  position: absolute;
+  top: 26px;
+  left: 8px;
+  content: counter(my-counter);
+  /* Выводим число */
+  counter-increment: my-counter;
+  /* Увеличиваем значение счётчика */
+  color: var(--label-color);
+}
+
+.equipment-label-manufacturer {
+  /* position: relative; */
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin-top: 0;
+  align-items: center;
+}
+
+.equipment-label-manufacturer::before {
+  content: '0';
+  position: absolute;
+  display: block;
+  top: 26px;
+  left: 0;
+  color: var(--label-color);
+}
+
+.equipment-label-manufacturer::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 1200px;
+  height: 1px;
+  background-color: var(--label-color);
+}
+
+.equipment-label-manufacturer .grid__item {
+  margin-top: 0;
+}
+
+.equipment-label span {
+  padding-left: 87px;
+}
+
+.equipment-label span,
+.equipment-model {
+  display: block;
+  height: 20px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.equipment-manufacturer span {
+  display: block;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.equipment .content-in-row {
+  justify-content: space-between;
 }
 
 .label {
@@ -775,62 +921,18 @@ footer .button:focus,
   background-image: url("../images/icons/redarrow.svg");
 }
 
-.hero-about {
-  padding-top: 100px;
-  padding-bottom: 0;
-}
-
-.hero-about .container {
-  padding-bottom: 474px;
-}
-
-.hero-about-text {
-  display: flex;
-  margin-top: -60px;
-  margin-left: -60px;
-}
-
-.hero-about .title-box {
-  /* margin-top: 99px; */
-  margin-top: 0;
-}
-
-.hero-about .description-box {
-  /* margin-top: 107px; */
-  /* margin-bottom: 474px; */
-  font-size: 20px;
-  line-height: 1.4;
-}
-
-.hero-about .benefits-number {
-  height: 72px;
-  margin-bottom: 35px;
-}
-
-.hero-about .benefits-number::after {
-  margin-top: 15px;
-}
-
-.hero-about .description-box p {
-  margin-bottom: 0;
-}
-
 .benefits-about {
-  position: relative;
   padding-top: 487px;
   padding-bottom: 151px;
-}
-
-.benefits-about img {
-  position: absolute;
-  top: -337px;
-  right: 0;
-  /* width: 1400px; */
-  /* margin-bottom: 100px; */
+  --grid__item: 4;
 }
 
 .benefits-about .container {
   padding-bottom: 0;
+}
+
+.placeholder {
+  line-height: 1;
 }
 
 .annotation,
@@ -865,102 +967,6 @@ footer .button:focus,
   background-repeat: no-repeat;
   background-position: right;
   /* background-size: 1200px; */
-}
-
-.equipment {
-  padding-top: 537px;
-}
-
-.equipment .list {
-  position: relative;
-  list-style-type: none;
-  /* Убираем исходные маркеры */
-  counter-reset: my-counter;
-  /* Задаём имя счетчика */
-}
-
-.equipment .list::before {
-  content: '';
-  display: block;
-  width: 1200px;
-  height: 1px;
-  background-color: var(--label-color);
-}
-
-.equipment-label-manufacturer {
-  /* position: relative; */
-  padding-top: 20px;
-  padding-bottom: 25px;
-  margin-top: 0;
-  align-items: center;
-}
-
-.equipment-label-manufacturer::before {
-  content: '0';
-  position: absolute;
-  display: block;
-  top: 26px;
-  left: 0;
-  color: var(--label-color);
-}
-
-.equipment-label-manufacturer::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: '';
-  display: block;
-  width: 1200px;
-  height: 1px;
-  background-color: var(--label-color);
-}
-
-.equipment .list {
-  list-style-type: none;
-  /* Убираем исходные маркеры */
-  counter-reset: my-counter;
-  /* Задаём имя счетчика */
-}
-
-.equipment .list-item {
-  position: relative;
-}
-
-.equipment .list-item::after {
-  position: absolute;
-  top: 26px;
-  left: 8px;
-  content: counter(my-counter);
-  /* Выводим число */
-  counter-increment: my-counter;
-  /* Увеличиваем значение счётчика */
-  color: var(--label-color);
-}
-
-.equipment-label-manufacturer .grid__item {
-  margin-top: 0;
-}
-
-.equipment-label span {
-  padding-left: 87px;
-}
-
-.equipment-label span,
-.equipment-model {
-  display: block;
-  height: 20px;
-  font-size: 20px;
-  line-height: 1;
-}
-
-.equipment-manufacturer span {
-  display: block;
-  font-size: 16px;
-  line-height: 1;
-}
-
-.equipment .content-in-row {
-  justify-content: space-between;
 }
 
 .btn-minus {

@@ -1,5 +1,4 @@
 .footer {
-  padding-top: 100px;
   --grid__item: 2;
 }
 
@@ -7,22 +6,28 @@
   // display: flex;
   // margin-left: -60px;
   // margin-top: -60px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  // border: 1px solid transparent;
+  margin-bottom: 0;
 }
 
-.footer-title {
-  display: block;
-  width: 310px;
-  margin-bottom: 62px;
-  font-size: 30px;
-  line-height: 1.2;
-}
-
-.footer .link {
+.main-nav__link {
   display: block;
   padding-top: 9px;
   padding-bottom: 9px;
 }
+
+.footer__title {
+  display: block;
+  width: 310px;
+  margin-bottom: 62px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
 
 .footer .invitation {
   padding-right: 20px;
@@ -58,8 +63,9 @@
   cursor: pointer;
 }
 
-.main-nav-footer,
-.placeholder {
+.main-nav--footer {
+  margin-top: -5px;
+  margin-bottom: -6px;
   line-height: 1;
 }
 
@@ -67,8 +73,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  // border: 1px solid transparent;
   font-size: 14px;
   line-height: 1;
 }
