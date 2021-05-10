@@ -1,0 +1,82 @@
+.footer {
+  padding-top: 100px;
+  --grid__item: 2;
+}
+
+.top-footer {
+  // display: flex;
+  // margin-left: -60px;
+  // margin-top: -60px;
+  padding-bottom: 100px;
+}
+
+.footer-title {
+  display: block;
+  width: 310px;
+  margin-bottom: 62px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.footer .link {
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.footer .invitation {
+  padding-right: 20px;
+  margin-bottom: 64px;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.footer-form input {
+  border: none;
+  background-color: var(--bg-color);
+}
+
+.footer-form input::placeholder {
+  color: var(--text-color);
+}
+
+.footer-form button {
+  height: 18px;
+  border: none;
+  fill: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.footer-form button:hover {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
+.main-nav-footer,
+.placeholder {
+  line-height: 1;
+}
+
+.low-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.low-footer p {
+  margin-bottom: 0;
+}
+
+.footer .social-list:not(:last-child) {
+  margin-right: 32px;
+}

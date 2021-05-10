@@ -1,13 +1,9 @@
-
-
-.works .button,
-.works-about .button,
-.news .button {
+.button--label {
   display: flex;
   height: 23px;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  margin-left: auto;
+  // margin-left: auto;
   padding-left: 65px;
   padding-right: 0;
   background-image: url('../images/icons/plus.svg');
@@ -15,33 +11,29 @@
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: center;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+  
+  &::before {
+    content: '';
+    display: block;
+    margin-right: 48px;
+    width: 1000px;
+    height: 1px;
+    background-color: currentColor;
+  }
+
+  &:hover, &:focus {
+    background-image: url('../images/icons/redplus.svg');
+  }
 }
 
-.works .button::before,
-.works-about .button:before,
-.news .button::before {
-  content: '';
-  display: block;
-  margin-right: 48px;
-  width: 1000px;
-  height: 1px;
 
-  background-color: currentColor;
-}
+// .news .button::before {
+//   width: 1006px;
+// }
 
-.news .button::before {
-  width: 1006px;
-}
-
-.works .button:hover,
-.works .button:focus,
-.works-about .button:hover,
-.works-about .button:focus,
-.news .button:hover,
-.news .button:focus {
-  background-image: url('../images/icons/redplus.svg');
-}
 
 .footer .button,
 .proposal .button {

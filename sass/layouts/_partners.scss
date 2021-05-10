@@ -1,0 +1,20 @@
+.partners {
+  padding-top: 166px;
+  padding-bottom: 167px;
+  --grid__item: 2;
+}
+
+.partners__list {
+  --grid__item: 3;
+}
+
+.partners__item:nth-child(8) {
+  padding-top: 12px;
+}
+
+.partners__img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
