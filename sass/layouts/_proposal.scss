@@ -1,0 +1,17 @@
+.proposal {
+  margin-top: -60px;
+  padding-top: 0;
+  --grid__item: 2;
+}
+
+.proposal .section__title {
+  margin-bottom: 34px;
+}
+
+.proposal .section__title + p {
+  display: block;
+  width: 320px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  line-height: 1.4;
+}

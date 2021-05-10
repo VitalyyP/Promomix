@@ -21,6 +21,7 @@
 @import './layouts/hero-about';
 @import './layouts/history';
 @import './layouts/equipment';
+@import './layouts/proposal';
 // .container-page-title {
 //   width: 570px;
 //   padding-right: 120px;
@@ -194,39 +195,22 @@
 
 .works-about {
   overflow: hidden;
-}
-.works-about-list {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: -60px;
-  margin-left: -60px;
+  --grid__item: 3;
 }
 
-.works-about-list .item:nth-child(4) {
+.works-about__list {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.works-about__item:nth-child(4) {
   position: absolute;
   /* display: block; */
   left: 1260px;
   width: calc((100% - 60px * 3) / 3);
 }
 
-.proposal {
-  margin-top: -60px;
-  padding-top: 0;
-}
 
-.proposal .section__title {
-  margin-bottom: 34px;
-}
-
-.proposal .section__title + p {
-  display: block;
-  width: 320px;
-  margin-bottom: 0px;
-  font-size: 20px;
-  line-height: 1.4;
-}
 
 .form {
   position: relative;

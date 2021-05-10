@@ -113,6 +113,8 @@ th {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: var(--text-color);
+  z-index: 99;
 }
 
 .button--label::before {
@@ -125,6 +127,7 @@ th {
 }
 
 .button--label:hover, .button--label:focus {
+  color: var(--accent-color);
   background-image: url("../images/icons/redplus.svg");
 }
 
@@ -135,6 +138,7 @@ th {
   font-size: 12px;
   text-transform: uppercase;
   border: 1px solid var(--accent-color);
+  background-color: transparent;
 }
 
 footer .button:hover,
@@ -500,6 +504,7 @@ footer .button:focus,
 }
 
 .works-label {
+  margin-bottom: 0;
   font-size: 11px;
   letter-spacing: 0.05em;
 }
@@ -840,6 +845,24 @@ footer .button:focus,
   justify-content: space-between;
 }
 
+.proposal {
+  margin-top: -60px;
+  padding-top: 0;
+  --grid__item: 2;
+}
+
+.proposal .section__title {
+  margin-bottom: 34px;
+}
+
+.proposal .section__title + p {
+  display: block;
+  width: 320px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
 .label {
   font-size: 12px;
   line-height: 1;
@@ -996,39 +1019,19 @@ footer .button:focus,
 
 .works-about {
   overflow: hidden;
+  --grid__item: 3;
 }
 
-.works-about-list {
+.works-about__list {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: -60px;
-  margin-left: -60px;
+  margin-bottom: 40px;
 }
 
-.works-about-list .item:nth-child(4) {
+.works-about__item:nth-child(4) {
   position: absolute;
   /* display: block; */
   left: 1260px;
   width: calc((100% - 60px * 3) / 3);
-}
-
-.proposal {
-  margin-top: -60px;
-  padding-top: 0;
-}
-
-.proposal .section__title {
-  margin-bottom: 34px;
-}
-
-.proposal .section__title + p {
-  display: block;
-  width: 320px;
-  margin-bottom: 0px;
-  font-size: 20px;
-  line-height: 1.4;
 }
 
 .form {
